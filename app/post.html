@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Blog</title>
+    <link rel="stylesheet" type="text/css" href="css/style.min.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <div class="header__left">
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="index.html">Главная</a>
+              </li>
+
+              <li class="nav__item">
+                <a class="nav__link has-subnav" href="post.html">Статьи</a>
+
+                <ul class="subnav">
+                  <li>
+                    <a class="subnav__link" href="#">Создание сайтов</a>
+                  </li>
+                  <li>
+                    <a class="subnav__link" href="#">Интернет-маркетинг</a>
+                  </li>
+                  <li>
+                    <a class="subnav__link" href="#">Продвижение видео</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav__item">
+                <a class="nav__link" href="#">Обо мне</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Реклама</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="header__right">
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="#">Профиль</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Выйти</a>
+              </li>
+            </ul>
+          </nav>
+
+          <form class="search" action="/" method="post">
+            <input
+              class="search__input"
+              type="text"
+              placeholder="Поиск по блоку"
+            />
+          </form>
+        </div>
+      </header>
+
+      <!--Sidebar-->
+      <aside class="sidebar">
+        <div class="sidebar__header">
+          <img src="images/sidebar__header.jpg" alt="" />
+        </div>
+
+        <div class="sidebar__content">
+          <div class="profile">
+            <img class="profile__avatar" src="images/I am.jpg" alt="" />
+            <div class="profile__name">Затёсова Кристина</div>
+            <div class="profile__prof">блог front-end разработчика</div>
+
+            <ul class="social">
+              <li class="social__item">
+                <a class="social__link" href="#" target="_blank">
+                  <img src="images/instagram.svg" alt="instagram" />
+                </a>
+              </li>
+
+              <li class="social__item">
+                <a class="social__link" href="#" target="_blank">
+                  <img src="images/vk.svg" alt="vk" />
+                </a>
+              </li>
+
+              <li class="social__item">
+                <a class="social__link" href="#" target="_blank">
+                  <img src="images/pinterest.svg" alt="pinterest" />
+                </a>
+              </li>
+            </ul>
+
+            <div class="profile__text">
+              <p>
+                Front-end разработчик. Практик верстки сайтов. Созданием сайтов
+                занимаюсь с 2012 года. Работал в нескольких ИТ компаниях и
+                наработал более 10 000 часов в создании сайтов различной
+                сложности.
+              </p>
+            </div>
+          </div>
+          <!--profile-->
+        </div>
+        <!--sidebar__content-->
+
+        <div class="sidebar__footer">
+          <a class="btn btn__red" href="#">Мои работы</a>
+          <button class="btn btn__blue" type="button">Написать мне</button>
+        </div>
+      </aside>
+    </div>
+
+    <main class="main">
+      <div class="container">
+        <!--Post-->
+        <article class="post">
+          <div class="post__actions">
+            <a href="index.html">вернуться назад</a>
+            <a href="#">
+              поделиться
+              <img
+                class="post__actions_icon"
+                src="images/share 1.svg"
+                alt="поделиться"
+              />
+            </a>
+          </div>
+          <div class="post__header post__header_open">
+            <h1 class="post__title post__title__mb0">
+              Как я сходил на FrontEnd Conf 2021
+            </h1>
+            <ul class="post__data">
+              <li class="post__data__item">
+                <time datetime="2020-05-21"> 21.06.2020 </time>
+              </li>
+              <li class="post__data__item">
+                <a href="#"> конференции </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="post__content">
+            <div class="post__text">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Elementum volutpat orci turpis urna. Et vestibulum, posuere
+                tortor lacinia sit. Sagittis porttitor orci auctor in at
+                tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor
+                nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel
+                volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Elementum volutpat orci turpis urna. Et vestibulum,
+                posuere tortor lacinia sit. Sagittis porttitor orci auctor in at
+                tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor
+                nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel
+                volutpat.
+              </p>
+
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Elementum volutpat orci turpis urna. Et vestibulum, posuere
+                tortor lacinia sit. Sagittis porttitor orci auctor in at
+                tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor
+                nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel
+                volutpat.
+              </p>
+
+              <p><img src="images/image.jpg" alt="" /></p>
+
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Elementum volutpat orci turpis urna. Et vestibulum, posuere
+                tortor lacinia sit. Sagittis porttitor orci auctor in at
+                tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor
+                nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel
+                volutpat.
+              </p>
+            </div>
+            <!--post__text-->
+            <div class="related">
+              <h3 class="post__subtitle">Интересно почитать</h3>
+
+              <ul class="related__list">
+                <li class="related__list__item">
+                  <h4 class="related__list__title">
+                    <a href="post.html">Как я сходил на FrontEnd Conf 2021</a>
+                  </h4>
+                  <time class="related__list__date" datetime="2020-06-21"
+                    >21.06.2020
+                  </time>
+                </li>
+
+                <li class="related__list__item">
+                  <h4 class="related__list__title">
+                    <a href="post.html">Как писать код быстро и ... </a>
+                  </h4>
+                  <time class="related__list__date" datetime="2020-06-21"
+                    >21.06.2020
+                  </time>
+                </li>
+
+                <li class="related__list__item">
+                  <h4 class="related__list__title">
+                    <a href="#">Купил новый ноутбук за 150 000 руб</a>
+                  </h4>
+                  <time class="related__list__date" datetime="2020-06-21"
+                    >21.06.2020
+                  </time>
+                </li>
+
+                <li class="related__list__item">
+                  <h4 class="related__list__title">
+                    <a href="#">Купил новый ноутбук за 150 000 руб</a>
+                  </h4>
+                  <time class="related__list__date" datetime="2020-06-21"
+                    >21.06.2020
+                  </time>
+                </li>
+              </ul>
+            </div>
+            <!--related-->
+
+            <h3 class="post__subtitle">Обсуждение</h3>
+            <form class="form" action="/" method="post">
+              <div class="form__group">
+                <textarea
+                  class="form__control form__control__textarea"
+                  name="comments__text"
+                  placeholder="Текст комментария"
+                >
+                </textarea>
+                <span class="form__line"></span>
+              </div>
+              <button class="btn btn__blue btn__rounded btn__sm" type="submit">
+                Отправить
+              </button>
+            </form>
+
+            <ul class="comments">
+              <li class="comments__item">
+                <div class="comments__header">
+                  <img
+                    class="comments__avatar"
+                    src="https://placehold.it/30"
+                    alt=""
+                  />
+
+                  <div class="comment__author">
+                    <div class="comments__name">Дмитрий Валак</div>
+                    <time class="comments__date" datetime="2020-12-21">
+                      1 неделю назад
+                    </time>
+                  </div>
+                </div>
+                <!--/.comments__header-->
+
+                <div class="comments__text">
+                  Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor
+                  orci auctor in at tincidunt arcu egestas. Fusce arcu sodales
+                  lacinia eu auctor nunc nam id. Diam sit sed volutpat massa.
+                  Egestas ornare vel volutpat.
+                </div>
+                <button class="comments__reply" type="button">Ответить</button>
+
+                <ul class="comments">
+                  <li class="comments__item">
+                    <div class="comments__header">
+                      <img
+                        class="comments__avatar"
+                        src="https://placehold.it/30"
+                        alt=""
+                      />
+
+                      <div class="comment__author">
+                        <div class="comments__name">Дмитрий Валак</div>
+                        <time class="comments__date" datetime="2020-12-21">
+                          1 неделю назад
+                        </time>
+                      </div>
+                    </div>
+                    <!--/.comments__header-->
+
+                    <div class="comments__text">
+                      Et vestibulum, posuere tortor lacinia sit. Sagittis
+                      porttitor orci auctor in at tincidunt arcu egestas. Fusce
+                      arcu sodales lacinia eu auctor nunc nam id. Diam sit sed
+                      volutpat massa. Egestas ornare vel volutpat.
+                    </div>
+                    <button class="comments__reply" type="button">
+                      Ответить
+                    </button>
+                  </li>
+                </ul>
+                <!--/.comments-->
+              </li>
+            </ul>
+            <!--/.comments-->
+          </div>
+          <!--post__content-->
+        </article>
+        <!--/.post-->
+      </div>
+    </main>
+
+    <!--JS-->
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
+
