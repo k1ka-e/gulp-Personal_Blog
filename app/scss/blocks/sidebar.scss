@@ -117,6 +117,10 @@
             darken($color: $blue, $amount: 5%);
         }
     }
+
+    &__rounded {
+        border-radius: 0.41rem;
+    }
 }
 
 .sidebar__footer {

@@ -25,6 +25,15 @@ body {
     box-sizing: border-box
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+      text-decoration: underline;
+  }
+}
+
 /* scroll bar
 ================ */
 ::-webkit-scrollbar {
@@ -52,6 +61,7 @@ body {
 @import 'blocks/add__post.scss';
 @import 'blocks/post.scss';
 @import 'blocks/embed.scss';
+@import 'blocks/form.scss';
 
 
 
