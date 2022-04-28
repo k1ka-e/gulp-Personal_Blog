@@ -49,7 +49,7 @@
           <nav class="nav">
             <ul class="nav__list">
               <li class="nav__item">
-                <a class="nav__link" href="profile.html">Профиль</a>
+                <a class="nav__link" href="#">Профиль</a>
               </li>
               <li class="nav__item">
                 <a class="nav__link" href="#">Выйти</a>
@@ -115,7 +115,7 @@
         <div class="sidebar__footer">
           <a class="btn btn__red" href="works.html">Мои работы</a>
           <a href="https://t.me/k1kaaa7">
-            <button  class="btn btn__blue" type="button">Написать мне</button>
+            <button class="btn btn__blue" type="button">Написать мне</button>
           </a>
         </div>
       </aside>
@@ -123,79 +123,55 @@
 
     <main class="main">
       <div class="container">
-        <h1 class="page__title">Мои работы</h1>
-
-        <article class="work">
-          <div class="work__preview">
-            <img src="images/work/work1.jpg" alt="" />
+        <h1 class="page__title page__title__center">Регистрация</h1>
+        <form class="form form__auth" action="/" method="post">
+          <div class="form__group form__group__md">
+            <input class="form__control" type="text" placeholder="Ваше имя" />
+            <span class="form__line"></span>
           </div>
-          <div class="work__content">
-            <h2 class="work__title">
-              <a href="#" target="_blank">altermono.com</a>
-            </h2>
 
-            <div class="work__description">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Elementum volutpat orci turpis urna. Et vestibulum, posuere
-                tortor lacinia sit. Sagittis porttitor orci auctor in at
-                tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor
-                nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel
-                volutpat.
-              </p>
+          <div class="form__group form__group__md">
+            <input
+              class="form__control"
+              type="email"
+              placeholder="Ваш e-mail"
+            />
+            <span class="form__line"></span>
+          </div>
+
+          <div class="form__group form__group__md">
+            <input class="form__control" type="password" placeholder="пароль" />
+            <span class="form__line"></span>
+          </div>
+
+          <div class="form__group form__group__md">
+            <input
+              class="form__control"
+              type="password"
+              placeholder="Подтвердите пароль"
+            />
+            <span class="form__line"></span>
+          </div>
+
+          <div class="form__footer form__footer__center">
+            <div class="form__group form__group__md">
+              <button class="btn btn__blue btn__rounded btn__sm" type="submit">
+                Регистрация
+              </button>
             </div>
 
-            <ul class="tags">
-              <li class="tags__item">дизайн</li>
-              <li class="tags__item">создание сайта</li>
-              <li class="tags__item">SMM</li>
+            <ul class="form__footer__list">
+                <li>
+                    <a href="signin.html">войти</a>
+                </li>
+
+                <li>
+                    <a href="reset.html">восстановить</a>
+                </li>
             </ul>
-
-            <div class="work__footer">
-              <a
-                class="btn btn__blue btn__rounded btn__sm"
-                href="#"
-                target="_blank"
-                >Перейти на сайт</a
-              >
-            </div>
           </div>
-        </article>
 
-        <article class="work">
-          <div class="work__preview">
-            <img src="images/work/work2.jpg" alt="" />
-          </div>
-          <div class="work__content">
-            <h2 class="work__title">
-              <a href="#" target="_blank">codedoco.com</a>
-            </h2>
-
-            <div class="work__description">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Elementum volutpat orci turpis urna. Et vestibulum, posuere
-                tortor lacinia sit. Sagittis porttitor orci auctor in at
-                tincidunt arcu egestas.
-              </p>
-            </div>
-
-            <ul class="tags">
-              <li class="tags__item">дизайн</li>
-              <li class="tags__item">создание сайта</li>
-              <li class="tags__item">SMM</li>
-            </ul>
-
-            <div class="work__footer">
-              <a
-                class="btn btn__blue btn__rounded btn__sm"
-                href="#"
-                target="_blank"
-                >Перейти на сайт</a
-              >
-            </div>
-          </div>
-        </article>
+        </form>
       </div>
     </main>
 
