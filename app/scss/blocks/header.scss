@@ -36,13 +36,17 @@
 }
 
 .nav {
-    @include breakpoint($tablet-bp) {
+    &__mobile {
         display: none;
+        margin: 3rem 0;
     }
 
-    &__mobile {
-        display: block;
-        margin: 3rem 0;
+    @include breakpoint($tablet-bp) {
+        display: none;
+
+        &__mobile {
+            display: block;
+        }
     }
 }
 
