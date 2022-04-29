@@ -7,7 +7,7 @@
     <title>Personal Blog</title>
     <link rel="stylesheet" type="text/css" href="css/style.min.css" />
   </head>
-  <body class="show__sidebar">
+  <body>
     <div class="page">
       <header class="header">
         <div class="header__left">
@@ -165,7 +165,12 @@
 
         <article class="work">
           <div class="work__preview">
-            <img src="images/work/work1.jpg" alt="" />
+            <picture>
+              <source srcset="575/150" 
+              media="(max-width: 575px)">
+              <img src="images/work/work1.jpg" alt="" />
+            </picture>
+            
           </div>
           <div class="work__content">
             <h2 class="work__title">
@@ -202,7 +207,11 @@
 
         <article class="work">
           <div class="work__preview">
-            <img src="images/work/work2.jpg" alt="" />
+            <picture>
+              <source srcset="575/150" 
+              media="(max-width: 575px)">
+              <img src="images/work/work2.jpg" alt="" />
+            </picture>
           </div>
           <div class="work__content">
             <h2 class="work__title">

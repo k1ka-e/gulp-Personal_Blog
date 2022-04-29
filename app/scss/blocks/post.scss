@@ -8,6 +8,10 @@
     background-color: $primary;
     box-shadow:  0 15px 25px 
     rgba($black, .35);
+
+    @include breakpoint($mobile-bp) {
+        padding: 1.5rem;
+    }
 }
 
 .post__header {
@@ -35,6 +39,7 @@
 .post__title {
     margin-bottom: 1.5rem;
     font-size: 1.8rem;
+    line-height: 1.4;
     color: $white;
     font-weight: 500;
 
@@ -46,8 +51,8 @@
         }
     }
 
-    &__mb0 {
-        margin-bottom: 0;
+    &__open0 {
+        margin-bottom: .75rem;
     }
 }
 
@@ -132,6 +137,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include breakpoint($mobile-bp) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
 }
 
 .post__data {
@@ -146,6 +157,12 @@
 
     &:hover {
         text-decoration: underline;
+    }
+
+    @include breakpoint($mobile-bp) {
+        margin-bottom: 1rem;
+
+        font-size: 1.2rem;
     }
 }
 
@@ -178,6 +195,10 @@
     margin-top: 8rem;
     display: flex;
     justify-content: center;
+
+    @include breakpoint($mobile-bp) {
+        margin-top: 5rem;
+    }
 }
 
 .pagination__item {
@@ -256,11 +277,19 @@
 .related__list {
     display: flex;
     flex-wrap: wrap;
+
+    @include breakpoint($mobile-bp) {
+        flex-direction: column;
+    }
 }
 
 .related__list__item {
     width: 50%;
     margin-bottom: 2.5rem;
+
+    @include breakpoint($mobile-bp) {
+        width: 100%;
+    }
 }
 
 .related__list__title {
@@ -294,6 +323,10 @@
     > .comments {
         padding-left: 3rem;
         margin-top: 3rem;
+
+        @include breakpoint($mobile-bp) {
+            padding-left: 1.5rem;
+        }
     }
 }
 
