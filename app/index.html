@@ -7,7 +7,7 @@
     <title>Personal Blog</title>
     <link rel="stylesheet" type="text/css" href="css/style.min.css" />
   </head>
-  <body class="no_scroll">
+  <body class="show__sidebar">
     <div class="page">
       <header class="header">
         <div class="header__left">
@@ -41,6 +41,10 @@
               </li>
             </ul>
           </nav>
+
+          <button class="burger" type="button">
+            <span>navig</span>
+          </button>
         </div>
 
         <div class="header__right">
@@ -59,7 +63,7 @@
             <input
               class="search__input"
               type="text"
-              placeholder="Поиск по блоку"
+              placeholder="Поиск по блогу"
             />
           </form>
         </div>
@@ -73,9 +77,14 @@
 
         <div class="sidebar__content">
           <div class="profile">
-            <img class="profile__avatar" src="images/I am.jpg" alt="" />
-            <div class="profile__name">Затёсова Кристина</div>
-            <div class="profile__prof">блог front-end разработчика</div>
+
+              <img class="profile__avatar" src="images/I am.jpg" alt="" />
+            
+              <div class="profile__header">
+              <div class="profile__name">Затёсова Кристина</div>
+              <div class="profile__prof">блог front-end разработчика</div>
+            </div>
+
 
             <ul class="social">
               <li class="social__item">
@@ -105,16 +114,45 @@
                 сложности.
               </p>
             </div>
-          </div>
-          <!--profile-->
-        </div>
-        <!--sidebar__content-->
+          </div><!--profile-->
+
+          <nav class="nav nav__mobile">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="index.html">Главная</a>
+              </li>
+
+              <li class="nav__item">
+                <a class="nav__link has-subnav" href="post.html">Статьи</a>
+
+                <ul class="subnav">
+                  <li>
+                    <a class="subnav__link" href="#">Создание сайтов</a>
+                  </li>
+                  <li>
+                    <a class="subnav__link" href="#">Интернет-маркетинг</a>
+                  </li>
+                  <li>
+                    <a class="subnav__link" href="#">Продвижение видео</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav__item">
+                <a class="nav__link" href="text.html">Обо мне</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="text.html">Реклама</a>
+              </li>
+            </ul>
+          </nav>
+        </div><!--sidebar__content-->
 
         <div class="sidebar__footer">
           <a class="btn btn__red" href="works.html">Мои работы</a>
           <a href="https://t.me/k1kaaa7">
-          <button  class="btn btn__blue" type="button">Написать мне</button>
-        </a>
+            <button class="btn btn__blue" type="button">Написать мне</button>
+          </a>
         </div>
       </aside>
     </div>
@@ -259,7 +297,7 @@
         <!--/.post-->
 
         <article class="post">
-          <div class="post__header  post__header_preview">
+          <div class="post__header post__header_preview">
             <a href="post.html">
               <img
                 class="post__preview"
@@ -315,66 +353,66 @@
       </div>
     </main>
 
-      <!--modal-->
+    <!--modal-->
     <div class="modal" id="contact__modal">
-            <div class="modal__content modal__content__botton">
-              <button class="modal__close" type="button">
-                <img src="images/contact-vector.svg" 
-                alt="закрыть">
+      <div class="modal__content modal__content__botton">
+        <button class="modal__close" type="button">
+          <img src="images/contact-vector.svg" alt="закрыть" />
+        </button>
+        <form class="form" action="/" method="post">
+          <div class="form__group form__group__md">
+            <input class="form__control" type="text" placeholder="Ваше имя" />
+            <span class="form__line"></span>
+          </div>
+
+          <div class="form__group form__group__md">
+            <input
+              class="form__control"
+              type="email"
+              placeholder="Ваш e-mail"
+            />
+            <span class="form__line"></span>
+          </div>
+
+          <div class="form__group form__group__md">
+            <textarea
+              class="form__control form__control__textarea"
+              placeholder="Текст сообщения"
+              name=""
+            ></textarea>
+            <span class="form__line"></span>
+          </div>
+
+          <div class="form__footer">
+            <div class="form__group form__group__md">
+              <button class="btn btn__blue btn__rounded btn__sm" type="submit">
+                Отправить
               </button>
-              <form class="form" action="/" method="post">
+            </div>
+          </div>
 
-                <div class="form__group form__group__md">
-                  <input class="form__control" type="text" placeholder="Ваше имя" />
-                  <span class="form__line"></span>
-                </div>
+          <ul class="modal__footer">
+            <li>
+              e-mail:
+              <a href="mailto:kzatesova@gmail.com"> kzatesova@gmail.com </a>
+            </li>
 
-
-                <div class="form__group form__group__md">
-                  <input class="form__control" type="email" placeholder="Ваш e-mail" />
-                  <span class="form__line"></span>
-                </div>
-
-                <div class="form__group form__group__md">
-                  <textarea class="form__control 
-                  form__control__textarea" placeholder="Текст сообщения"
-                  name=""></textarea>
-                  <span class="form__line"></span>
-                </div>
-      
-                <div class="form__footer">
-                  <div class="form__group form__group__md">
-                    <button class="btn btn__blue btn__rounded btn__sm" type="submit">
-                      Отправить
-                    </button>
-                  </div>
-                </div>
-
-                <ul class="modal__footer">
-                  <li>e-mail: 
-                    <a href="mailto:kzatesova@gmail.com">
-                      kzatesova@gmail.com
-                    </a> 
-                  </li>
-                  
-                  <li>тел: 
-                    <a href="tel:+998938411570">
-                      +99893-841-15-70
-                    </a> 
-                  </li>
-                </ul>
-
-              </form>
-              
-            </div><!--modal__content-->
-    </div><!--/.modal-->
+            <li>
+              тел:
+              <a href="tel:+998938411570"> +99893-841-15-70 </a>
+            </li>
+          </ul>
+        </form>
+      </div>
+      <!--modal__content-->
+    </div>
+    <!--/.modal-->
 
     <!--modal2-->
     <div class="modal" id="modal__copy">
       <div class="modal__content">
         <button class="modal__close" type="button">
-          <img src="images/contact-vector.svg" 
-          alt="закрыть">
+          <img src="images/contact-vector.svg" alt="закрыть" />
         </button>
 
         <ul class="social">
@@ -402,13 +440,15 @@
             </a>
           </li>
         </ul>
-        
-      </div><!--modal__content-->
-    </div><!--/.modal-->
+      </div>
+      <!--modal__content-->
+    </div>
+    <!--/.modal-->
 
     <div class="modal" id="modal__story">
       <video class="model__video" src="" poster="images/work/work1.jpg"></video>
-    </div><!--/.modal-->
+    </div>
+    <!--/.modal-->
 
     <!--JS-->
     <script src="js/main.min.js"></script>

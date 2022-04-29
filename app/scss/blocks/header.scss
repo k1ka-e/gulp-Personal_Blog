@@ -11,20 +11,47 @@
     top: 0;
     right: 0;
     z-index: $z-index-header;
+
+    @include breakpoint($tablet-bp) {
+        width: 100%;
+    }
 }
 
 .header__left {
     width: 60%;
+
+    @include breakpoint($tablet-bp) {
+        width: 40%;
+    }
 }
 
 .header__right {
     width: 40%;
     display: flex;
     justify-content: flex-end;
+
+    @include breakpoint($tablet-bp) {
+        width: 60%;
+    }
+}
+
+.nav {
+    @include breakpoint($tablet-bp) {
+        display: none;
+    }
+
+    &__mobile {
+        display: block;
+        margin: 3rem 0;
+    }
 }
 
 .nav__list {
     display: flex;
+
+    @include breakpoint($tablet-bp) {
+        flex-direction: column;
+    }
 }
 
 .nav__item {
@@ -36,6 +63,14 @@
     }
         > .subnav {
             display: block;
+        }
+    }
+
+    @include breakpoint($tablet-bp) {
+        &:hover  {
+            .nav__link {
+                background: none;
+            }
         }
     }
 }
@@ -73,6 +108,12 @@
           translate: (-50%);
 
       }
+    }
+
+    @include breakpoint($tablet-bp) {
+        padding-left: 0;
+        padding-right: 0;
+        font-size: 1.6rem;
     }
 }
 
@@ -112,6 +153,15 @@
    position: absolute;
    top: 100%;
    left: 0;
+
+   @include breakpoint($tablet-bp) {
+       position: static;
+       width: 100%;
+       padding-left: 1rem;
+
+       background-color: transparent;
+       box-shadow: none;
+   }
 }
 
 .subnav__link {
@@ -127,5 +177,17 @@
     &:hover {
         text-decoration: none;
         background-color: darken($blue, 5%);
+    }
+
+    @include breakpoint($tablet-bp) {
+        padding-left: 0;
+        padding-right: 0;
+
+        font-size: 1.5rem;
+
+        &:hover {
+            background: none;
+        }
+
     }
 }
