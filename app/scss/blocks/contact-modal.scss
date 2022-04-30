@@ -33,8 +33,9 @@
     transition: transform .2s ease-in-out,
     opacity .2s ease-in-out;
 
-    @include breakpoint($tablet-bp) {
+    @include breakpoint($mobile-bp) {
         padding: 5rem 3rem 3rem;
+        min-width: 30rem;
     }
     
 
@@ -94,4 +95,10 @@
 .model__video {
     display: block;
     margin: 0 auto;
+
+    @include breakpoint($table-bp) {
+      width: 300px;
+      height: 500px;
+    }
 }
+
