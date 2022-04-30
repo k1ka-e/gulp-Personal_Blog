@@ -3,6 +3,13 @@
     flex-direction: column;
     min-height: 10vh;
     overflow: hidden; 
+
+    @include breakpoint($tablet-bp) {
+        .show__sidebar & {
+             position: relative;
+        }
+       
+    }
 }
 
 .page__title {
