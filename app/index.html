@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.min.css" />
   </head>
   <body>
-    <div class="page">
+    <div class="page" id="page">
       <header class="header">
         <div class="header__left">
           <nav class="nav">
@@ -42,8 +42,8 @@
             </ul>
           </nav>
 
-          <button class="burger" type="button">
-            <span>navig</span>
+          <button class="burger" type="button" id="sidebarToggle">
+            <span>открыть навигацию</span>
           </button>
         </div>
 
@@ -70,7 +70,7 @@
       </header>
 
       <!--Sidebar-->
-      <aside class="sidebar">
+      <aside class="sidebar" id="sidebar">
         <div class="sidebar__header">
           <img src="images/sidebar__header.jpg" alt="" />
         </div>
@@ -148,7 +148,7 @@
                 <a class="nav__link" href="profile.html">Профиль</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="#">Выйти</a>
+                <a class="nav__link" href="signin.html">Выйти</a>
               </li>
             </ul>
           </nav>
@@ -156,8 +156,9 @@
 
         <div class="sidebar__footer">
           <a class="btn btn__red" href="works.html">Мои работы</a>
-          <a href="https://t.me/k1kaaa7">
-            <button class="btn btn__blue" type="button">Написать мне</button>
+          <a href="#">
+            <button class="btn btn__blue" data-modal="contact__modal"
+            type="button">Написать мне</button>
           </a>
         </div>
       </aside>
@@ -167,7 +168,7 @@
       <div class="container">
         <!--stories-->
         <div class="stories">
-          <div class="stories__item">
+          <div class="stories__item" data-modal="story__modal">
             <img class="stories__preview" src="images/story1.png" alt="" />
             <div class="stories__title">Отдыхаю на природе</div>
             <time class="stories__date" datetime="2020-09-21">21.09.2020</time>
@@ -199,6 +200,7 @@
               class="add__post__textarea"
               name="post-text"
               placeholder="Напишите что-нибудь"
+              data-autoresize
             >
             </textarea>
 
@@ -362,9 +364,11 @@
     <!--modal-->
     <div class="modal" id="contact__modal">
       <div class="modal__content modal__content__botton">
+
         <button class="modal__close" type="button">
           <img src="images/contact-vector.svg" alt="закрыть" />
         </button>
+
         <form class="form" action="/" method="post">
           <div class="form__group form__group__md">
             <input class="form__control" type="text" placeholder="Ваше имя" />
@@ -415,7 +419,7 @@
     <!--/.modal-->
 
     <!--modal2-->
-    <div class="modal" id="modal__copy">
+    <div class="modal" id="copy__modal">
       <div class="modal__content">
         <button class="modal__close" type="button">
           <img src="images/contact-vector.svg" alt="закрыть" />
@@ -451,9 +455,12 @@
     </div>
     <!--/.modal-->
 
-    <div class="modal" id="modal__story">
+    <!--modal3-->
+  <div class="modal" id="story__modal">
+    <div class="modal__content modal__content__story">
       <video class="model__video" src="" poster="images/work/work1.jpg"></video>
     </div>
+  </div>
     <!--/.modal-->
 
     <!--JS-->
