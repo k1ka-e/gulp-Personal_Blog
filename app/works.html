@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.min.css" />
   </head>
   <body>
-    <div class="page">
+    <div class="page" id="page">
       <header class="header">
         <div class="header__left">
           <nav class="nav">
@@ -22,9 +22,7 @@
 
                 <ul class="subnav">
                   <li>
-                    <a class="subnav__link" href="works.html"
-                      >Создание сайтов</a
-                    >
+                    <a class="subnav__link" href="#">Создание сайтов</a>
                   </li>
                   <li>
                     <a class="subnav__link" href="#">Интернет-маркетинг</a>
@@ -36,18 +34,17 @@
               </li>
 
               <li class="nav__item">
-                <a class="nav__link" href="#">Обо мне</a>
+                <a class="nav__link" href="text.html">Обо мне</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="#">Реклама</a>
+                <a class="nav__link" href="text.html">Реклама</a>
               </li>
             </ul>
           </nav>
 
-          <button class="burger" type="button">
-            <span>navig</span>
+          <button class="burger" type="button" id="sidebarToggle">
+            <span>открыть навигацию</span>
           </button>
-
         </div>
 
         <div class="header__right">
@@ -57,12 +54,12 @@
                 <a class="nav__link" href="profile.html">Профиль</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="#">Выйти</a>
+                <a class="nav__link" href="signin.html">Выйти</a>
               </li>
             </ul>
           </nav>
 
-          <form class="search" action="/" method="post">
+          <form class="search" action="search.html" method="get">
             <input
               class="search__input"
               type="text"
@@ -73,19 +70,21 @@
       </header>
 
       <!--Sidebar-->
-      <aside class="sidebar">
+      <aside class="sidebar" id="sidebar">
         <div class="sidebar__header">
           <img src="images/sidebar__header.jpg" alt="" />
         </div>
 
         <div class="sidebar__content">
           <div class="profile">
-            <img class="profile__avatar" src="images/I am.jpg" alt="" />
 
+              <img class="profile__avatar" src="images/I am.jpg" alt="" />
+            
             <div class="profile__header">
               <div class="profile__name">Затёсова Кристина</div>
               <div class="profile__prof">блог front-end разработчика</div>
             </div>
+
 
             <ul class="social">
               <li class="social__item">
@@ -145,15 +144,21 @@
               <li class="nav__item">
                 <a class="nav__link" href="text.html">Реклама</a>
               </li>
+              <li class="nav__item">
+                <a class="nav__link" href="profile.html">Профиль</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="signin.html">Выйти</a>
+              </li>
             </ul>
           </nav>
-
         </div><!--sidebar__content-->
 
         <div class="sidebar__footer">
           <a class="btn btn__red" href="works.html">Мои работы</a>
-          <a href="https://t.me/k1kaaa7">
-            <button  class="btn btn__blue" type="button">Написать мне</button>
+          <a href="#">
+            <button class="btn btn__blue" data-modal="contact__modal"
+            type="button">Написать мне</button>
           </a>
         </div>
       </aside>
@@ -245,6 +250,108 @@
         </article>
       </div>
     </main>
+
+    <!--modal-->
+    <div class="modal" id="contact__modal">
+      <div class="modal__content modal__content__botton">
+
+        <button class="modal__close" type="button">
+          <img src="images/contact-vector.svg" alt="закрыть" />
+        </button>
+
+        <form class="form" action="/" method="post">
+          <div class="form__group form__group__md">
+            <input class="form__control" type="text" placeholder="Ваше имя" />
+            <span class="form__line"></span>
+          </div>
+
+          <div class="form__group form__group__md">
+            <input
+              class="form__control"
+              type="email"
+              placeholder="Ваш e-mail"
+            />
+            <span class="form__line"></span>
+          </div>
+
+          <div class="form__group form__group__md">
+            <textarea
+              class="form__control form__control__textarea"
+              placeholder="Текст сообщения"
+              name=""
+            ></textarea>
+            <span class="form__line"></span>
+          </div>
+
+          <div class="form__footer">
+            <div class="form__group form__group__md">
+              <button class="btn btn__blue btn__rounded btn__sm" type="submit">
+                Отправить
+              </button>
+            </div>
+          </div>
+
+          <ul class="modal__footer">
+            <li>
+              e-mail:
+              <a href="mailto:kzatesova@gmail.com"> kzatesova@gmail.com </a>
+            </li>
+
+            <li>
+              тел:
+              <a href="tel:+998938411570"> +99893-841-15-70 </a>
+            </li>
+          </ul>
+        </form>
+      </div>
+      <!--modal__content-->
+    </div>
+    <!--/.modal-->
+
+    <!--modal2-->
+    <div class="modal" id="copy__modal">
+      <div class="modal__content">
+        <button class="modal__close" type="button">
+          <img src="images/contact-vector.svg" alt="закрыть" />
+        </button>
+
+        <ul class="social">
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <img src="images/facebook.svg" alt="instagram" />
+            </a>
+          </li>
+
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <img src="images/twitter.svg" alt="vk" />
+            </a>
+          </li>
+
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <img src="images/vk 2.svg" alt="pinterest" />
+            </a>
+          </li>
+
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <img src="images/copy.svg" alt="pinterest" />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!--modal__content-->
+    </div>
+    <!--/.modal-->
+
+    <!--modal3-->
+  <div class="modal" id="story__modal">
+    <div class="modal__content modal__content__story">
+      <video class="model__video" src="images/video/doc_2022-04-30_12-17-11.mp4"></video>
+    </div>
+  </div>
+    <!--/.modal-->
 
     <!--JS-->
     <script src="js/main.min.js"></script>
