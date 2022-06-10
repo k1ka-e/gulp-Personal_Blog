@@ -95,15 +95,5 @@
 .model__video {
     display: block;
     margin: 0 auto;
-
-    @include breakpoint($table-bp) {
-      width: 300px;
-      height: 500px;
-    }
-
-    @include breakpoint($mobile-bp) {
-        width: 200px;
-        height: 300px;
-      }
 }
 
